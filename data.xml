@@ -1,0 +1,35 @@
+<config>
+    <windows>
+        <Product type="Fotoalbum">
+            <winType name="AP1">
+                <format value="30x30" sizeX="3456" sizeY="125445"/>
+                <format value="20x30" sizeX="3456" sizeY="125445"/>
+                <format value="30x40" sizeX="3456" sizeY="125445"/>
+
+            </winType>
+            <winType name="AP2">
+                <format value="30x30" sizeX="3456" sizeY="125445"/>
+                <format value="20x30" sizeX="3456" sizeY="125445"/>
+                <format value="30x40" sizeX="3456" sizeY="125445"/>
+
+            </winType>
+        </Product>
+        <Product type="Fotoalbum">
+            <winType name="AP1">
+                <format value="30x30" sizeX="3456" sizeY="125445"/>
+                <format value="20x30" sizeX="3456" sizeY="125445"/>
+                <format value="30x40" sizeX="3456" sizeY="125445"/>
+            </winType>
+            <winType name="AP2">
+                <format value="30x30" sizeX="3456" sizeY="125445"/>
+                <format value="20x30" sizeX="3456" sizeY="125445"/>
+                <format value="30x40" sizeX="3456" sizeY="125445"/>
+            </winType>
+        </Product>
+    </windows>
+    <otherWindows>
+        <window name="P1" sizeX="2552" sizeY="515154"/>
+        <window name="P2" sizeX="2552" sizeY="515154"/>
+        <window name="P3" sizeX="2552" sizeY="515154"/>
+    </otherWindows>
+</config>

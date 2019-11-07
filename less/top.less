@@ -1,0 +1,35 @@
+@square: 30px;
+@border: 1px solid lighten(@background-color, 10%);
+
+.top {
+  .top-container {
+
+    //height: 50px;
+    width: 100%;
+    .bottomBorder();
+    background: url("../content/images/top.png");
+    .font(16px);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    .flex(row);
+    justify-content: space-between;
+
+    .logo-small {
+      z-index: 99;
+      margin-left: 10px;
+      height: 50px;
+      .flex(row);
+      align-items: center;
+    }
+
+    .menu {
+      width: 50px;
+      height: 50px;
+      background: url("../content/images/menu.png") no-repeat 50%;
+    }
+    .active-menu {
+      background: url("../content/images/close.png") no-repeat 50%;
+    }
+  }
+}
+

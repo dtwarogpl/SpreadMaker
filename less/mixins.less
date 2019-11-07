@@ -1,0 +1,63 @@
+.font(@size:14px,@color:@text-color,@weight:normal) {
+  font-size: @size;
+  color: @color;
+  font-weight: @weight;
+}
+.bottomBorder(){
+  border-bottom: 1px solid #9c9c9c;
+}
+.space-between{
+  .flex();
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.count{
+.font(12px,lighten(@background-color,90%));
+ border-radius: 12px;
+  letter-spacing: 0;
+  padding: 2px 6px;
+}
+
+.orange-bg{
+  background-color: @orange;
+}
+
+
+@orange:#bf7266;
+@blue:#1eebb4;
+@green:#0fa87e;
+@purple:#202d50;
+
+@button-color: #595b5b;
+@dark: #3f4041;
+
+@text-color: lighten(@background-color, 60%);
+@text-highlighted: lighten(@text-color, 50%);
+
+@highlighted: #454545;
+@background-color:#232323;
+@highlight-background:#2d2e2e;
+@warning:#ac0c26;
+
+
+  @icon-color-default:#c6c8c8;
+@blue:#5899a4;
+@main-color:@blue;
+
+@content-width: 90%;
+
+.flex(@direction:row) {
+  display: flex;
+  flex-direction: @direction;
+}
+
+.resetSpacing() {
+  margin: 0;
+  padding: 0;
+}
+
+.background(@fileUrl,@scale:40%){
+  background: url(@fileUrl) no-repeat 50%;
+  background-size: @scale;
+}

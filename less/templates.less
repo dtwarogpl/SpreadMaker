@@ -1,0 +1,97 @@
+// przyciski kategorii z rozmiarami
+///.size-button {
+///  .flex();
+///  justify-content: center;
+///  align-items: center;
+///  .font(16px);
+///  cursor: pointer;
+///  width: @content-width;
+///  height: 40px;
+///  margin: 5px auto;
+///  background: @button-color url(../icons/square.png) no-repeat 5%;
+///
+///  &.active {
+///    background: @dark url(../icons/square_active.png) no-repeat 5%;
+///    .font(16px, @highlighted, bold);
+///  }
+///}
+
+.available-templates {
+  .flex(column);
+
+  #template-items {
+    .flex();
+    justify-content: center;
+    flex-wrap: wrap;
+    .template-size-thumb {
+      margin: 10px;
+      background-color: @background-color;
+      img {
+        width: 80px;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//.size_templates {
+//  .flex(column);
+//  width: 100%;
+//  .hidden {
+//    display: none;
+//  }
+//  .templates {
+//    width: @content-width;
+//    margin: 0 auto;
+//    ul {
+//      .flex();
+//      justify-content: center;
+//      flex-wrap: wrap;
+//      .resetSpacing();
+//      li {
+//        list-style-type: none;
+//        margin: 3px;
+//        .thumb {
+//          width: 80px;
+//          opacity: 0.5;
+//          &:hover {
+//            opacity: 1;
+//          }
+//          &.active {
+//            opacity: 1;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//.selectedTemplate {
+//  padding: 10px;
+//  cursor: pointer;
+//  &:hover {
+//    background-color: fade(@highlighted, 10%);
+//  }
+//  div {
+//    width: 80%;
+//    margin: 3px auto;
+//    .flex(column);
+//    .font();
+//    justify-content: space-around;
+//    align-items: center;
+//  }
+//
+//}
+//
+//.info-message {
+//  .font(16px, @highlighted);
+//  background: @warning;
+//  position: relative;
+//
+//}

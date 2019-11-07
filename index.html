@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="top">
+    <div class="top-container">
+        <div class="logo-small">Spread Maker</div>
+        <div class="menu ">
+        </div>
+    </div>
+</div>
+
+<div id="properties">
+    <div id="properties-content">
+        <div class="album-components">
+            <div class="album-top">
+                <div class="album-top-container">
+                    <div class="album-top-container-left">
+                        <div id="thumb"></div>
+                    </div>
+                    <div class="album-top-container-right">
+                        <div id="album-name">Mój Album</div>
+                        <div id="album-size"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="properties-group">
+                <div class="group-name">
+                    <div class="space-between"><span>Rozkładówki</span><span id="spread-count" class="count orange-bg">0</span></div>
+                    <hr class="line">
+                </div>
+
+                <ul class="spreads-list">
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="loader">
+    <div class="loader-content">
+        Zaczekaj sekundkę, pracuję.
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+
+</div>
+<div class="content">
+    <div class="container panel welcome-screen">
+        <div class="logo"></div>
+        <div class="start-button">projektuj</div>
+    </div>
+    <div class="container panel albumParameters">
+        <div class="separator">
+            <div class="group-name">
+                <div class="space-between"><span>Grubość zamki zewnętrznej:</span><span id="outFrameValue">125px</span></div>
+                <hr class="line">
+            </div>
+        </div>
+        <div class="input">
+            <input title="outframe" id="outframeInput" class="range-slider" type="range" name="points" min="0" max="250">
+        </div>
+
+        <div class="separator">
+            <div class="group-name">
+                <div class="space-between"><span>Odstępy między zdjęciami:</span><span id="inFrameValue">50px</span></div>
+                <hr class="line">
+            </div>
+        </div>
+        <div class="input">
+            <input title="inframe" id="insideframeInput" class="range-slider" type="range" name="points" min="0" max="100">
+        </div>
+
+        <div class="separator">
+            <div class="group-name">
+                <div class="space-between"><span>Środek rozkładówki:</span><span id="middleFrameValue">70px</span></div>
+                <hr class="line">
+            </div>
+        </div>
+
+        <div class="input">
+            <input title="inframe" id="middleframeInput" class="range-slider" type="range" name="points" min="0" max="140">
+        </div>
+    </div>
+    <div class="container panel sizePanel">
+        <div class="separator">
+            <div class="group-name">
+                <div class="space-between"><span>Rozmiar rozkładówki</span></div>
+                <hr class="line">
+            </div>
+        </div>
+        <div id="spread-size-options"></div>
+    </div>
+
+    <div class="container panel uploader">
+        <div class="separator">
+            <div class="group-name">
+                <div class="space-between"><span>Wgraj zdjęcia</span></div>
+                <hr class="line">
+            </div>
+        </div>
+        <div id="drop_zone"><span id="dropzone-text">Przeciągnij pliki tutaj</span></div>
+        <!--<output id="list"></output> -->
+        <div class="separator">
+            <div class="group-name">
+                <div class="space-between"><span>Zacznacz pliki</span></div>
+                <hr class="line">
+            </div>
+        </div>
+        <div class="switch-option">
+            <div class="option-label">
+                <div class="option-title">
+                    wykorzystane
+                </div>
+                <div class="option-more">
+                    Pokaż lub ukryj pliki, których użyłeś wcześniej
+                </div>
+
+            </div>
+            <div class="option-controll">
+                <label class="switch">
+                    <input type="checkbox">
+                    <div id="usedPhotosOption" class="slider round"></div>
+                </label>
+            </div>
+        </div>
+        <div class="picturesContainer">
+
+            <div id="imageList"></div>
+        </div>
+
+
+    </div>
+    <div class="container panel available-templates">
+        <div class="separator">
+            <div class="group-name">
+                <div class="space-between"><span>Wybierz szablon</span></div>
+                <hr class="line">
+            </div>
+        </div>
+        <div id="template-items"></div>
+    </div>
+    <div class="container panel selectedTemplate">
+        <div>
+            <div>Wybrany szablon:</div>
+            <img class="thumbPrev" src="" data-photos=""></div>
+        <div class="info-message"></div>
+    </div>
+
+    <div class="container panel spread_options">
+        <h2>2. Opcje</h2>
+        <div class="option" id="getFrameWidth">
+            Wybierz grubość obramowania:
+            <form name="registrationForm">
+                <input type="range" name="FrameWidthBar" id="outFrameWidth" value="125" min="1" max="250" oninput="FrameWidthValue.value = outFrameWidth.value">
+                <output name="FrameWidthBarValue" id="FrameWidthValue">125</output>
+            </form>
+
+        </div>
+        <div class="option" id="getColor">
+            <div>
+                Wybierz kolor obramowania:
+                <button id="colorShow"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container panel actionButton">mnb
+        +
+        <button id="createPage" class="btn BigButton">Stwórz rozkładówkę</button>
+    </div>
+    <div class="container panel actions">
+
+        <h2>3. Operacje</h2>
+        <div class="buttons">
+            <button id="swapImages" class="btn small-btn">Zamień zdjęcia</button>
+            <button id="createNewSpread" class="btn small-btn">Stwórz nową rozkładówkę</button>
+        </div>
+    </div>
+
+</div>
+<div style="position: fixed; bottom:0;text-align: center;width:100%;color:white;cursor: pointer" onclick="history.go(0)">Reload</div>
+<script src="Libs/CSInterface.js"></script>
+<script src="Libs/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="Libs/script.js"></script>
+</body>
+</html>
